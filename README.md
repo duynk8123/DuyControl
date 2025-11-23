@@ -20,7 +20,22 @@
         Service & Driver layers for expansion
 
         Support for virtual UART (PTY / socat) for testing without hardware
-
+## How to build and run source code
+    Step 1:
+        Download packages:
+            WSL2    :    Ubuntu-22.04 (On the Internet)
+            GCC     :   $ sudo apt install gcc
+            Cmake   :   $ sudo apt install cmake
+    Step 2: 
+        Run these following commands for the first time build
+            $ git clone https://github.com/duynk8123/DuyControl
+            $ mkdir build
+            $ cd build
+            $ cmake ..
+            $ make 
+            $ ./dcontrol
+        If you have already built, following this command:    
+            $ ./dcontrol
 ## Project Goal
 
     The goal of DuyControl is to provide a clean, extensible, hardware-agnostic base for building:
@@ -51,9 +66,9 @@
                 | (Raspberry Pi, STM32)      |
                 +============================+
 
-✔ Easy to test
-✔ Hardware abstraction ready
-✔ Modules easy to extend
+    Easy to test
+    Hardware abstraction ready
+    Modules easy to extend
 ## Thread Model
 
     The Linux-side application runs 4 main threads:

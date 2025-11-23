@@ -1,6 +1,6 @@
 #ifndef UI_STATE_H
 #define UI_STATE_H
-#include "../core/system.h"
+#include "system.h"
 typedef enum {
     UI_STATE_MAIN_MENU,
     UI_STATE_SELECT_RASP,

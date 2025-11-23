@@ -1,5 +1,5 @@
 #include "system.h"
-#include "../ui/ui.h"
+#include "ui.h"
 #include <string.h>
 
 void system_init(SystemContext* ctx)
